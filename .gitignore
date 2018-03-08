@@ -1,0 +1,20 @@
+# Xcode
+.DS_Store
+build/
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+*.xcuserstate
+profile
+*.moved-aside
+DerivedData
+.idea/
+
+# CocoaPods
+Pods
+*.lock
+.bundle
+vendor/bundle
+
+# Ruby
+.ruby-version

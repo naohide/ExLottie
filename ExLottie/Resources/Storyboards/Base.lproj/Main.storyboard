@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExLottie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lff-g4-Tvs" customClass="LOTAnimationView">
+                                <rect key="frame" x="137" y="80" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VmZ-ou-bm3"/>
+                                    <constraint firstAttribute="width" constant="100" id="k3h-Ix-RGA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flX-yO-8KW" customClass="LOTAnimationView">
+                                <rect key="frame" x="137" y="240" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Mm3-pc-9GF"/>
+                                    <constraint firstAttribute="width" constant="100" id="ujA-zV-qlM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jy-18-8de" customClass="LOTAnimationView">
+                                <rect key="frame" x="137" y="400" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4DU-e2-jKe"/>
+                                    <constraint firstAttribute="height" constant="100" id="kEC-bN-urd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lff-g4-Tvs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="EFD-lI-Ner"/>
+                            <constraint firstItem="Lff-g4-Tvs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nf6-fa-Aoz"/>
+                            <constraint firstItem="flX-yO-8KW" firstAttribute="top" secondItem="Lff-g4-Tvs" secondAttribute="bottom" constant="60" id="WbV-GC-gmI"/>
+                            <constraint firstItem="6jy-18-8de" firstAttribute="top" secondItem="flX-yO-8KW" secondAttribute="bottom" constant="60" id="fhA-du-vL0"/>
+                            <constraint firstItem="flX-yO-8KW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jey-MN-rOY"/>
+                            <constraint firstItem="6jy-18-8de" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zgw-bM-1e5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="multiAnimationView" destination="6jy-18-8de" id="aXk-nW-TTJ"/>
+                        <outlet property="simpleAnimationView" destination="Lff-g4-Tvs" id="FhP-NH-ogp"/>
+                        <outlet property="singleAnimationView" destination="flX-yO-8KW" id="ANo-7Q-CqP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
